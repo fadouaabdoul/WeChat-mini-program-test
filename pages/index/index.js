@@ -15,6 +15,11 @@ Page({
       url: '../logs/logs'
     })
   },
+  createForm:  function(){
+    wx.navigateTo({
+      url: '/pages/form/form',
+    })
+  },
   onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({
