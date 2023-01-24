@@ -1,2 +1,4 @@
-<!--pages/form/form.wxml-->
-<text>pages/form/form.wxml</text>
+<form bindsubmit='submitPost'>
+<input name="content" placeholder="write here"></input>
+<button form-type='submit'>Submit</button>
+</form>

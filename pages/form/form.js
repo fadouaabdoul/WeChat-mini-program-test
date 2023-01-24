@@ -1,4 +1,4 @@
-// pages/form/form.js
+  // pages/form/form.js
 Page({
 
   /**
@@ -7,7 +7,20 @@ Page({
   data: {
 
   },
-
+submitPost : function(event) {
+  wx.cloud.callFunction({
+    name : "savePost",
+    data :{
+      content: event.detail.value.content
+    },
+    success: (res) => {
+      wx.navigateTo({
+        url: 'pages/index/index',
+      })
+      console.log(content)
+    },
+  })
+},
   /**
    * Lifecycle function--Called when page load
    */
