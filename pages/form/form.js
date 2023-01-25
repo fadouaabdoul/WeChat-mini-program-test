@@ -8,18 +8,13 @@ Page({
 
   },
 submitPost : function(event) {
-  wx.cloud.callFunction({
-    name : "savePost",
-    data :{
-      content: event.detail.value.content
-    },
-    success: (res) => {
-      wx.navigateTo({
-        url: 'pages/index/index',
-      })
-      console.log(content)
-    },
-  })
+  
+  
+  var contentVal =  event.detail.value.content
+    
+    console.log(contentVal)
+  
+    
 },
   /**
    * Lifecycle function--Called when page load

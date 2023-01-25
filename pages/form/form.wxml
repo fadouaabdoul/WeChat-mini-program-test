@@ -1,4 +1,4 @@
 <form bindsubmit='submitPost'>
-<input name="content" placeholder="write here"></input>
+<input name="content" placeholder="write here" id='inputVal'></input>
 <button form-type='submit'>Submit</button>
 </form>
