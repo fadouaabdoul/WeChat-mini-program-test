@@ -1,1 +1,0 @@
-# WeChat-mini-program-test
